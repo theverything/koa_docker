@@ -1,0 +1,19 @@
+{
+  "name": "koa_docker",
+  "version": "0.1.0",
+  "description": "koa app on docker",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --harmony server.js"
+  },
+  "dependencies": {
+    "koa": "^0.10.0"
+  },
+  "keywords": [
+    "koa",
+    "docker"
+  ],
+  "author": "Jeffrey Horn",
+  "license": "MIT"
+}
