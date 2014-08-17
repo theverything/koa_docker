@@ -1,17 +1,20 @@
 {
   "name": "koa_docker",
   "version": "0.1.0",
-  "description": "koa app on docker",
+  "description": "koa and redis app on docker",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node --harmony server.js"
   },
   "dependencies": {
-    "koa": "^0.10.0"
+    "koa": "^0.10.0",
+    "koa-router": "^3.2.3",
+    "redis": "^0.12.1"
   },
   "keywords": [
     "koa",
+    "redis",
     "docker"
   ],
   "author": "Jeffrey Horn",
