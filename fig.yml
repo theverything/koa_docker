@@ -7,3 +7,5 @@ web:
    - "80:8080"
 redis:
   image: "dockerfile/redis"
+  volumes:
+    -   redis/data:/data
