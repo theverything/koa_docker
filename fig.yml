@@ -5,9 +5,14 @@ web:
     - .:/app"
   links:
     - "redis"
+    - "mongo"
   ports:
    - "8080:8080"
 redis:
   image: "dockerfile/redis"
   volumes:
     -   redis/data:/data
+mongo:
+  image: "dockerfile/mongodb"
+  volumes:
+    - mongo/data/db:/data/db

@@ -1,3 +1,5 @@
 .DS_Store
 .vagrant
 .nvmrc
+redis
+mongo
