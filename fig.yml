@@ -2,12 +2,12 @@ web:
   build: .
   command: "nodemon --hamrmony ./server.js"
   volumes:
-    - .:/app"
+    - .:/app
   links:
     - "redis"
     - "mongo"
   ports:
-   - "8080:8080"
+   - "80:8080"
 redis:
   image: "dockerfile/redis"
   volumes:
@@ -15,4 +15,4 @@ redis:
 mongo:
   image: "dockerfile/mongodb"
   volumes:
-    - mongo/data/db:/data/db
+    - mongo/data:/data
