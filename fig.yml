@@ -1,6 +1,6 @@
 web:
   build: .
-  command: "nodemon --hamrmony ./server.js"
+  command: "nodemon --harmony ./server.js"
   volumes:
     - .:/app
   links:
